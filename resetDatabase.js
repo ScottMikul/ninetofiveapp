@@ -4,7 +4,7 @@ var MongoClient = require('mongodb').MongoClient
 // Connection URL
 var url = 'mongodb://localhost:27017/test';
 
-// Use connect method to connect to the server
+// This will insert the timeslot objects and the times associated with the slots from 9-5.
 MongoClient.connect(url, function(err, db) {
   assert.equal(null, err);
   console.log("Connected successfully to server");
